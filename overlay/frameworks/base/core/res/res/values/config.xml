@@ -43,6 +43,8 @@
 
     <!-- Shows the required view for in-display fingerprint -->
     <bool name="config_supportsInDisplayFingerprint">true</bool>
+    <!-- for another impl ... huh -->
+    <bool name="config_needCustomFODView">true</bool>
 
     <!-- Height of the status bar in portrait -->
     <dimen name="status_bar_height_portrait">100px</dimen>
