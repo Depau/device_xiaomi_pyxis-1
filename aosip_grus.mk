@@ -30,10 +30,10 @@ PRODUCT_MODEL := MI 9 SE
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_CHARACTERISTICS := nosdcard
 
-BUILD_FINGERPRINT := "Xiaomi/grus/grus:9/PKQ1.181121.001/V10.3.3.0.PFBCNXM:user/release-keys"
+BUILD_FINGERPRINT := "google/blueline/blueline:10/QP1A.191105.003/5899767:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="grus-user 9 PKQ1.181121.001 V10.3.3.0.PFBCNXM release-keys" \
+    PRIVATE_BUILD_DESC="grus-user 10 QP1A.191105.003 V11.0.9.0.PFBMIXM release-keys" \
     PRODUCT_NAME="grus" \
     TARGET_DEVICE="grus"
 
