@@ -30,7 +30,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
 # NFC
 PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.se.type=eSE,HCE,UICC \
-    ro.nfc.port=I2C \
     ro.hardware.nfc_nci=nqx.default
 
 # SSR
