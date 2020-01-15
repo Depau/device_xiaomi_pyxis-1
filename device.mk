@@ -59,10 +59,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService
-
 # Lights
 PRODUCT_PACKAGES += \
     lights.sdm710
