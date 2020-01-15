@@ -15,9 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_grus.mk
+    $(LOCAL_DIR)/lineage_pyxis.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_grus-user \
-    aosip_grus-userdebug \
-    aosip_grus-eng
+    lineage_pyxis-userdebug \
+    lineage_pyxis-user

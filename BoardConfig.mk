@@ -17,17 +17,17 @@
 # Inherit from sdm710-common
 -include device/xiaomi/sdm710-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/grus
+DEVICE_PATH := device/xiaomi/pyxis
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := grus
+TARGET_OTA_ASSERT_DEVICE := pyxis
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 
 # Kernel
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := grus_defconfig
+TARGET_KERNEL_CONFIG := pyxis_defconfig
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -35,17 +35,18 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
 
+# NFC
+TARGET_USES_NQ_NFC := true
+BOARD_NFC_CHIPSET := pn553
+
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
-# NFC
-TARGET_USES_NQ_NFC := true
-
 # Inherit from the proprietary version
--include vendor/xiaomi/grus/BoardConfigVendor.mk
+-include vendor/xiaomi/pyxis/BoardConfigVendor.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

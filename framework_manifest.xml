@@ -2,12 +2,11 @@
     <hal format="hidl">
         <name>android.hardware.nfc</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1.1</version>
         <interface>
             <name>INfc</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.2::INfc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.nxp.hardware.nfc</name>
@@ -17,7 +16,6 @@
             <name>INqNfc</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.1::INqNfc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
@@ -25,13 +23,6 @@
         <version>1.0</version>
         <interface>
             <name>IFingerprintInscreen</name>
-            <instance>default</instance>
-        </interface>
-        <name>vendor.lineage.livedisplay</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IPictureAdjustment</name>
             <instance>default</instance>
         </interface>
     </hal>
