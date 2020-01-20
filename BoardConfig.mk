@@ -48,6 +48,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Inherit from the proprietary version
 -include vendor/xiaomi/pyxis/BoardConfigVendor.mk
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := libinit_pyxis
+TARGET_RECOVERY_DEVICE_MODULES := libinit_pyxis
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
